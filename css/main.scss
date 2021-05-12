@@ -1,73 +1,246 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 body {
-  background: #dddcdc;
+  background: white;
   margin: 0;
   font-family: "Poppins";
+  padding: 10;
 }
 
-.navbar {
-  background: #010522cc;
+nav {
+  background: #0e406a;
+  opacity: 90%;
   padding: 2em;
-  height: 8mm;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  // align-items: flex-start;
+  padding: 4px;
 
-  .container {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 2;
-  }
-  .logo {
-    padding: 2;
-  }
-
-  .primary-nav {
-    display: flex;
-    margin: 0;
-  }
-
-  li a {
-    color: white;
-    text-decoration: none;
-    display: block;
+  .sabanci-logo {
+    display: inline-block;
     padding: 0.5em;
-    font-size: 1.15em;
-    text-align: right;
+    line-height: 80px;
+    margin: 0 5px;
   }
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+label.logo {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 80px;
+  padding-left: 10px;
 }
 
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-self: center;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 0.5em;
+  line-height: 80px;
+  font-size: 1.15em;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
 section {
-  padding: 5em 2em;
+  padding: 10em 2em;
 }
 
 .intro-section {
   text-align: center;
+  background: whitesmoke;
+}
+
+.video-section {
+  text-align: left;
+  background: #5cdb95;
+  justify-content: space-between;
+
+  ul li {
+    padding: 0.5em;
+    font-size: 1.15em;
+    color: #05386b;
+  }
+
+  ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+}
+
+.student-section {
+  text-align: center;
+  background: #5cdb95;
+  justify-content: space-between;
 }
 .contact-section {
-  position: relative;
-  background: #010522cc;
+  background: white;
+  flex-wrap: nowrap;
 
   .container {
     display: flex;
-  }
-  .contact-right {
-    width: 110%;
-    height: 100%;
+    justify-content: space-around;
   }
 }
 
+.founder-section {
+  text-align: center;
+  background: whitesmoke;
+}
+
+.contact-section .contact-left {
+  background-color: white;
+  border-radius: 2%;
+  border-width: 2px;
+}
+.contact-section.contact-right {
+  position: relative;
+}
 form {
   display: flex;
   flex-direction: column;
   place-content: space-evenly;
 }
 
-.map {
-  margin: 3em;
-  margin-left: 13cm;
+label {
+  color: #010522cc;
 }
+
+h2.red-text {
+  color: black;
+}
+
+h2.blue-text {
+  flex-direction: flex-end;
+}
+
+.send-message-cta {
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.input-area {
+  border-radius: 4px;
+  margin-top: 2px;
+}
+
+.address {
+  color: white;
+  background-color: #0e406a;
+  text-align: right;
+  opacity: 0.9;
+  font-size: 10pt;
+}
+h1.title {
+  color: #0e406a;
+  font-size: 2em;
+  margin-top: -2.5em;
+}
+
+h1.founder-title {
+  color: #0e406a;
+  font-size: 2em;
+  margin-top: 0.4em;
+}
+.contact-info {
+  color: #0e406a;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #f0f3ea;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.card-reyyan {
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #f0f3ea;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+
+  .card-body {
+    padding: 1.25rem;
+
+    ul li {
+      list-style-type: none;
+      padding: 0.5em;
+      font-size: 1.15em;
+      color: #05386b;
+    }
+
+    ul li a {
+      color: black;
+      text-decoration: none;
+      display: inline-block;
+      text-align: left;
+    }
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.card-body {
+  flex: 1 1 auto;
+  padding: 1.25rem;
+
+  ul li {
+    list-style-type: none;
+    padding: 0.5em;
+    font-size: 1.15em;
+    color: #05386b;
+  }
+
+  ul li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.card-img-top {
+  width: 100%;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+
+h3.subtitle {
+  color: black;
+}
+
+.cardtitle {
+  background-color: #05386b;
+}
+// .map {
+//   margin: 3em;
+//   margin-left: 13cm;
+// }
