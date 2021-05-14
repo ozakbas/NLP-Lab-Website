@@ -21,9 +21,8 @@ nav {
 
 nav .sabanci-logo {
   display: inline-block;
-  padding: 0.5em;
-  line-height: 80px;
-  margin: 0 5px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 label.logo {
@@ -112,6 +111,9 @@ section {
 
 .founder-section {
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: whitesmoke;
 }
 
@@ -175,12 +177,6 @@ h1.title {
   margin-top: -2.5em;
 }
 
-h1.founder-title {
-  color: #0e406a;
-  font-size: 2em;
-  margin-top: 0.4em;
-}
-
 .contact-info {
   color: #0e406a;
   padding-left: 0.5em;
@@ -188,53 +184,71 @@ h1.founder-title {
 }
 
 .card {
+  background: #fff;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.5);
+          box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.5);
+  max-width: 700px;
+  max-height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #f0f3ea;
-  background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border-radius: 25px;
+  overflow: hidden;
+  margin: 20px;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
 }
 
-.card-reyyan {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #f0f3ea;
-  background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+.card h2 {
+  margin: 0;
+  padding: 0 1rem;
 }
 
-.card-reyyan .card-body {
-  padding: 1.25rem;
+.card .title {
+  padding: 1rem;
+  text-align: right;
+  color: green;
+  font-weight: bold;
+  font-size: 18px;
 }
 
-.card-reyyan .card-body ul li {
-  list-style-type: none;
-  padding: 0.5em;
-  font-size: 1.15em;
-  color: #05386b;
+.card-info {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  padding: 5px;
 }
 
-.card-reyyan .card-body ul li a {
-  color: black;
-  text-decoration: none;
-  display: inline-block;
-  text-align: left;
+path {
+  fill: white;
+}
+
+.image-container {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  overflow: hidden;
+}
+
+.profile-image {
+  height: 100%;
+}
+
+button {
+  border: none;
+  background: none;
+  font-size: 24px;
+  color: #8bc34a;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+button:hover {
+  color: #4CAF50;
+  -webkit-transform: rotate(22deg);
+          transform: rotate(22deg);
 }
 
 .row {
