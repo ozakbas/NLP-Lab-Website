@@ -91,10 +91,7 @@ label.logo {
     min-height: 250px !important;
   }
   .profile-image {
-    top: 25% !important;
-  }
-  .person-title {
-    text-align: center !important;
+    top: 30% !important;
   }
   .card {
     -webkit-box-orient: vertical;
@@ -322,8 +319,7 @@ h1.title {
 
 .person-title {
   padding: 1rem;
-  text-align: right;
-  color: coral;
+  text-align: center;
   font-weight: bold;
   font-size: 18px;
 }
@@ -333,6 +329,7 @@ h1.title {
       -ms-flex: 1;
           flex: 1;
   padding: 20px;
+  margin: 60px auto;
 }
 
 path {
@@ -352,8 +349,8 @@ path {
 }
 
 .profile-image {
+  min-width: 250px;
   border-radius: 50%;
-  margin: 0;
   position: absolute;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
