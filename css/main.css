@@ -126,6 +126,7 @@ label.logo {
     transition: -webkit-transform 0.6s ease-in;
     transition: transform 0.6s ease-in;
     transition: transform 0.6s ease-in, -webkit-transform 0.6s ease-in;
+    z-index: 1;
   }
   .nav-element li {
     opacity: 1;

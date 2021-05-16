@@ -56,9 +56,8 @@ label.logo {
   margin: 5px;
 }
 
-
 .individual-container {
-  margin:0px 150px
+  margin: 0px 150px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -76,25 +75,21 @@ label.logo {
     align-content: inherit;
   }
 
-
-  
   .individual-container {
-    margin:0px 10px
+    margin: 0px 10px;
   }
 
-  
-  .image-container{
+  .image-container {
     min-height: 250px !important;
   }
 
-  .profile-image{
+  .profile-image {
     top: 25% !important;
-  
   }
   .person-title {
     text-align: center !important;
   }
-  .card{
+  .card {
     flex-direction: column;
   }
   .nav-element {
@@ -110,6 +105,7 @@ label.logo {
     width: 50%;
     transform: translateX(100%);
     transition: transform 0.6s ease-in;
+    z-index: 1;
   }
 
   .nav-element li {
@@ -136,8 +132,6 @@ label.logo {
   .nav-clicked {
     transform: translateX(0%);
   }
-
-
 }
 
 section {
@@ -263,7 +257,6 @@ h1.title {
   padding: 10px;
 }
 
-
 .card h2 {
   margin: 0;
   padding: 0 1rem;
@@ -302,7 +295,6 @@ path {
   top: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-
 }
 
 button {
@@ -325,7 +317,6 @@ button {
   margin-right: -15px;
   margin-left: -15px;
 }
-
 
 footer {
   display: flex;
