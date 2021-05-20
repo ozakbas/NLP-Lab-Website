@@ -328,7 +328,8 @@ footer {
 .tab {
   overflow: hidden;
   display:flex;
-  flex-direction: column;
+  text-align: center;
+
 }
 
 /* Style the buttons inside the tab */
@@ -344,6 +345,7 @@ footer {
   text-align: center;
   font-weight: bold;
   font-size: 20px;
+  font-family: "Poppins";
 }
 
 /* Change background color of buttons on hover */
