@@ -60,6 +60,28 @@ label.logo {
   margin: 0px 150px;
 }
 
+.publication-icon-container {
+  display: flex;
+  align-self: center;
+}
+
+.publication-icon {
+  width: 50px;
+}
+
+.publication-li {
+  display: flex;
+  margin: 20px
+}
+
+.container {
+  margin: 0px 100px;
+}
+
+.p {
+  padding: 20px 0px;
+}
+
 @media screen and (max-width: 1024px) {
   .nav-element {
     width: 60%;
@@ -75,8 +97,16 @@ label.logo {
     align-content: inherit;
   }
 
+  .container {
+      margin: 0px;
+  }
+
+  .publication-li {
+    flex-direction: column;
+  }
+
   .individual-container {
-    margin: 0px 10px;
+    margin: 0px;
   }
 
   .image-container {
@@ -170,7 +200,7 @@ section {
 .contact-section {
   background: #f5f5f5;
 
-  .container {
+  .contact-container {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -229,6 +259,11 @@ h2.blue-text {
 }
 h1.title {
   color: #eaecf0;
+  font-size: 2em;
+  margin-top: -2.5em;
+}
+h1.black-title {
+  color: #0f1626;
   font-size: 2em;
   margin-top: -2.5em;
 }
