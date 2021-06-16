@@ -29,12 +29,15 @@
             <li>
                 <a href="../positions.html">POSITIONS</a>
             </li>
+            <li>
+                <a href="./project.html">PROJECTS</a>
+            </li>
 
             <li>
                 <a href="../people.html">PEOPLE</a>
             </li>
             <li>
-                <a href="#contact">CONTACT</a>
+                <a href="./contact.html">CONTACT</a>
             </li>
         </ul>
 
@@ -57,20 +60,37 @@
 
                 <h2>Buse Çarık</h2>
                 <div class="person-title">MSc Student</div>
+               
+
+
+
+              
+
+
+            <div class="tab">
+                <div style="margin:auto">                        
+                    
+                    <button class="tablinks" onclick="openTab(event, 'summary')">Introduction</button>
+
+                    <button class="tablinks" onclick="openTab(event, 'education')">Education</button>
+
+
+                    <button class="tablinks" onclick="openTab(event, 'work-exp')">Work Experience</button>
+
+
+                    <button class="tablinks" onclick="openTab(event, 'publications')">Publications</button>
+
+
+                    <button class="tablinks" onclick="openTab(event, 'teachings')">Teachings</button>
+
+
+                </div>
+            </div>
+
+            <div id="summary" class="tabcontent">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget ultrices quam. Nunc malesuada,
-                    tellus sed cursus tincidunt, orci lectus ultrices justo, ut rhoncus nulla nibh eu mauris. In
-                    ullamcorper lacus et turpis molestie suscipit. Donec condimentum sed mauris sed tempus. Maecenas
-                    posuere malesuada gravida. Praesent tristique, risus at luctus feugiat, metus enim venenatis est,
-                    nec tincidunt elit mi a nunc. Aliquam imperdiet iaculis ornare. Nullam nec ullamcorper lectus. Nunc
-                    felis justo, volutpat in neque nec, semper ultrices lacus. Praesent ultricies at urna id vestibulum.
-                    Vestibulum suscipit ligula odio, ut convallis ligula condimentum at. Pellentesque faucibus ultricies
-                    dolor, in tincidunt quam finibus in. Nullam eget venenatis justo. Morbi laoreet ut tellus non
-                    faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus tincidunt massa ac
-                    rhoncus.
+                    Buse Çarık is a MSc. student at Sabancı University.
                 </p>
-
-
 
                 <div>
                     <a href="https://www.linkedin.com/in/buse%C3%A7ar%C4%B1k" target="_blank"> <button
@@ -78,9 +98,29 @@
                     <a href="https://github.com/busecarik" target="_blank"> <button class="icons"><img
                                 src="../github.svg" /></button></a>
                 </div>
+            </div>
+            <div id="education" class="tabcontent">
+                       
+               
+
 
             </div>
 
+            <div id="work-exp" class="tabcontent">
+          
+          
+            </div>
+
+            <div id="publications" class="tabcontent">
+
+
+            </div>
+            <div id="teachings" class="tabcontent">
+
+              
+
+
+        </div>
 
 
         </div>
@@ -90,6 +130,22 @@
     </div>
 
     <script src="../app.js"></script>
+
+    <script>
+        function openTab(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
 
 </body>
 

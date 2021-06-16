@@ -2,7 +2,7 @@
 
 body {
   background: #f5f5f5;
-  margin: 0;
+  margin: auto;
   font-family: "Poppins";
   padding: 10;
 }
@@ -10,7 +10,6 @@ body {
 nav {
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
   min-height: 8vh;
   background: #0f1626;
 }
@@ -28,6 +27,13 @@ label.logo {
   letter-spacing: 2px;
 }
 
+label.logo-dark {
+  color: #0f1626;
+  font-weight: bold;
+  font-size: 30px;
+  padding-top: 0.6vh;
+  letter-spacing: 2px;
+}
 .nav-element {
   display: flex;
   justify-content: space-around;
@@ -45,6 +51,28 @@ label.logo {
   letter-spacing: 0.3px;
 }
 
+nav.dark-nav {
+  display: flex;
+  justify-content: space-around;
+  min-height: 8vh;
+  background: white;
+}
+.nav-element-dark {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.nav-element-dark li {
+  list-style: none;
+}
+
+.nav-element-dark li a {
+  color: #0f1626;
+  text-decoration: none;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+}
 .burger {
   display: none;
 }
@@ -61,8 +89,10 @@ label.logo {
 }
 
 .publication-icon-container {
+  margin-left: 5px;
   display: flex;
   align-self: center;
+  margin: 20px;
 }
 
 .publication-icon {
@@ -71,9 +101,12 @@ label.logo {
 
 .publication-li {
   display: flex;
-  margin: 20px
+  margin: 20px;
 }
 
+.education-list {
+  list-style: none;
+}
 .container {
   margin: 0px 100px;
 }
@@ -81,7 +114,20 @@ label.logo {
 .p {
   padding: 20px 0px;
 }
+th,
+td {
+  padding: 15px;
+}
+#t01 {
+  width: 100%;
+}
 
+#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+#t01 tr:nth-child(odd) {
+  background-color: #fff;
+}
 
 @media screen and (max-width: 1024px) {
   body {
@@ -93,11 +139,15 @@ label.logo {
   }
 
   .container {
-      margin: 30px
+    margin: 30px;
+  }
+  table {
+    background-color: #8bc34a;
   }
 
   .publication-li {
     flex-direction: column;
+    text-align: left;
   }
 
   .individual-container {
@@ -111,7 +161,7 @@ label.logo {
   .profile-image {
     top: 30% !important;
   }
-  
+
   .card {
     flex-direction: column;
   }
@@ -133,6 +183,7 @@ label.logo {
 
   .nav-element li {
     opacity: 1;
+    display: inline-block;
   }
   .burger {
     display: block;
@@ -158,7 +209,7 @@ label.logo {
 }
 
 section {
-  padding: 10em 2em;
+  padding: 10em 5em;
 }
 
 .intro-section {
@@ -175,7 +226,43 @@ section {
     padding: 0.5em;
     font-size: 1.15em;
     color: coral;
-    
+  }
+
+  ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+}
+
+.dark-section-resources {
+  text-align: left;
+  background: #f5f5f5;
+  justify-content: space-between;
+  padding: 10em 5em;
+
+  ul li {
+    padding: 0.5em;
+    font-size: 1.15em;
+    color: coral;
+  }
+
+  ul li a {
+    color: #0f1626;
+    text-decoration: none;
+    display: block;
+  }
+}
+
+.news-section {
+  text-align: left;
+  background: #0f1626;
+  justify-content: space-between;
+
+  ul li {
+    padding: 0.5em;
+    font-size: 1.15em;
+    color: coral;
   }
 
   ul li a {
@@ -231,6 +318,11 @@ h2.red-text {
   color: black;
 }
 
+h2 {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 19pt;
+}
 h2.blue-text {
   flex-direction: flex-end;
 }
@@ -264,11 +356,13 @@ h1.black-title {
   font-size: 2em;
   margin-top: -2.5em;
 }
-
+h1.title-resources {
+  text-align: center;
+  color: white;
+}
 .contact-info {
-  color: #0e406a;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
+  color: #0f1626;
+  padding-right: 1em;
 }
 
 .card {
@@ -292,10 +386,10 @@ h1.black-title {
   padding: 0 1rem;
 }
 .person-title {
-  padding: 1rem;
   text-align: center;
   font-weight: bold;
   font-size: 18px;
+  margin-top: -5;
 }
 
 .card-info {
@@ -319,13 +413,19 @@ path {
 }
 
 .profile-image {
-  
   min-width: 250px;
   border-radius: 50%;
   position: absolute;
   top: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+.news-image {
+  width: 400px;
+  height: 250px;
+  object-fit: contain;
+  margin-top: 0;
 }
 
 .icons {
@@ -354,16 +454,22 @@ footer {
   flex-direction: row;
 }
 
-
-
 /* Style the tab */
 .tab {
   overflow: hidden;
-  display:flex;
+  display: flex;
   text-align: center;
-
+  margin-top: 1px;
+}
+.temp {
+  display: flex;
+  flex-direction: row;
 }
 
+.temp3 {
+  display: flex;
+  flex-direction: column;
+}
 /* Style the buttons inside the tab */
 .tab button {
   background-color: inherit;
@@ -374,6 +480,7 @@ footer {
   padding: 14px 16px;
   transition: 0.3s;
   padding: 1rem;
+
   text-align: center;
   font-weight: bold;
   font-size: 20px;
@@ -397,15 +504,24 @@ footer {
   -webkit-animation: fadeEffect 1s;
   animation: fadeEffect 1s;
   margin: 20px;
+  text-align: left;
 }
 
 /* Fade in tabs */
 @-webkit-keyframes fadeEffect {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeEffect {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

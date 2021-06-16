@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 body {
   background: #f5f5f5;
-  margin: 0;
+  margin: auto;
   font-family: "Poppins";
   padding: 10;
 }
@@ -12,9 +12,6 @@ nav {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   min-height: 8vh;
   background: #0f1626;
 }
@@ -29,6 +26,14 @@ nav {
 
 label.logo {
   color: #f5f5f5;
+  font-weight: bold;
+  font-size: 30px;
+  padding-top: 0.6vh;
+  letter-spacing: 2px;
+}
+
+label.logo-dark {
+  color: #0f1626;
   font-weight: bold;
   font-size: 30px;
   padding-top: 0.6vh;
@@ -55,6 +60,36 @@ label.logo {
   letter-spacing: 0.3px;
 }
 
+nav.dark-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  min-height: 8vh;
+  background: white;
+}
+
+.nav-element-dark {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50%;
+}
+
+.nav-element-dark li {
+  list-style: none;
+}
+
+.nav-element-dark li a {
+  color: #0f1626;
+  text-decoration: none;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+}
+
 .burger {
   display: none;
 }
@@ -71,11 +106,13 @@ label.logo {
 }
 
 .publication-icon-container {
+  margin-left: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-item-align: center;
       align-self: center;
+  margin: 20px;
 }
 
 .publication-icon {
@@ -89,12 +126,33 @@ label.logo {
   margin: 20px;
 }
 
+.education-list {
+  list-style: none;
+}
+
 .container {
   margin: 0px 100px;
 }
 
 .p {
   padding: 20px 0px;
+}
+
+th,
+td {
+  padding: 15px;
+}
+
+#t01 {
+  width: 100%;
+}
+
+#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+
+#t01 tr:nth-child(odd) {
+  background-color: #fff;
 }
 
 @media screen and (max-width: 1024px) {
@@ -108,11 +166,15 @@ label.logo {
   .container {
     margin: 30px;
   }
+  table {
+    background-color: #8bc34a;
+  }
   .publication-li {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    text-align: left;
   }
   .individual-container {
     margin: 0px;
@@ -157,6 +219,7 @@ label.logo {
   }
   .nav-element li {
     opacity: 1;
+    display: inline-block;
   }
   .burger {
     display: block;
@@ -188,7 +251,7 @@ label.logo {
 }
 
 section {
-  padding: 10em 2em;
+  padding: 10em 5em;
 }
 
 .intro-section {
@@ -211,6 +274,47 @@ section {
 }
 
 .dark-section ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.dark-section-resources {
+  text-align: left;
+  background: #f5f5f5;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10em 5em;
+}
+
+.dark-section-resources ul li {
+  padding: 0.5em;
+  font-size: 1.15em;
+  color: coral;
+}
+
+.dark-section-resources ul li a {
+  color: #0f1626;
+  text-decoration: none;
+  display: block;
+}
+
+.news-section {
+  text-align: left;
+  background: #0f1626;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.news-section ul li {
+  padding: 0.5em;
+  font-size: 1.15em;
+  color: coral;
+}
+
+.news-section ul li a {
   color: white;
   text-decoration: none;
   display: block;
@@ -282,6 +386,12 @@ h2.red-text {
   color: black;
 }
 
+h2 {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 19pt;
+}
+
 h2.blue-text {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -323,10 +433,14 @@ h1.black-title {
   margin-top: -2.5em;
 }
 
+h1.title-resources {
+  text-align: center;
+  color: white;
+}
+
 .contact-info {
-  color: #0e406a;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
+  color: #0f1626;
+  padding-right: 1em;
 }
 
 .card {
@@ -355,10 +469,10 @@ h1.black-title {
 }
 
 .person-title {
-  padding: 1rem;
   text-align: center;
   font-weight: bold;
   font-size: 18px;
+  margin-top: -5;
 }
 
 .card-info {
@@ -392,6 +506,14 @@ path {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.news-image {
+  width: 400px;
+  height: 250px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-top: 0;
 }
 
 .icons {
@@ -440,6 +562,27 @@ footer {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
+  margin-top: 1px;
+}
+
+.temp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.temp3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 /* Style the buttons inside the tab */
@@ -476,6 +619,7 @@ footer {
   -webkit-animation: fadeEffect 1s;
   animation: fadeEffect 1s;
   margin: 20px;
+  text-align: left;
 }
 
 /* Fade in tabs */
