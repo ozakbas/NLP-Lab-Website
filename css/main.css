@@ -257,6 +257,8 @@ section {
 .intro-section {
   text-align: center;
   background: whitesmoke;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 .dark-section {
@@ -286,6 +288,8 @@ section {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 10em 5em;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 .dark-section-resources ul li {
@@ -306,6 +310,8 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 .news-section ul li {
