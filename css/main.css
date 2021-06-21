@@ -148,11 +148,8 @@ td {
 }
 
 #t01 tr:nth-child(even) {
-  background-color: #eee;
-}
-
-#t01 tr:nth-child(odd) {
-  background-color: #fff;
+  background-color: #f8f8f8;
+  border-radius: 3%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -228,7 +225,6 @@ td {
   .footer-container {
     color: white;
     background-color: #0f1626;
-    opacity: 0.9;
     font-size: 15pt;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -288,8 +284,8 @@ section {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 10em 5em;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .dark-section-resources ul li {
@@ -356,6 +352,7 @@ section {
 }
 
 .main-section {
+  padding-left: 5%;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -420,11 +417,20 @@ h2.blue-text {
   color: white;
   text-align: right;
   background-color: #0f1626;
-  opacity: 0.9;
   font-size: 15pt;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 h1.title {
@@ -517,9 +523,20 @@ path {
 .news-image {
   width: 400px;
   height: 250px;
+  margin-left: 5px;
   -o-object-fit: contain;
      object-fit: contain;
   margin-top: 0;
+}
+
+.news-image-div {
+  margin-left: 5px;
+  margin-top: -50px;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .icons {
